@@ -1,5 +1,4 @@
 telepot
 humanfriendly
-time
 json
 requests
