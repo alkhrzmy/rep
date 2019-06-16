@@ -1,1 +1,1 @@
-start: python3 lom.py
+bot: python3 lom.py
