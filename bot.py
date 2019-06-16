@@ -17,6 +17,7 @@ def handle(self):
         command = self['text'].strip().lower()
         if command == '/check' and content_type == 'text' and chat_type == 'private':
                 timing = time.time()
+                bot.sendMessage(chat_id, '=== Counting ===')
                 elapseTime = time.time() - timing
                 elapseStart = time.time() - programStart
                 bot.sendMessage(chat_id, 'Bot already running ' + format_timespan(elapseStart) + '\nBot send message speed %f'%elapseTime)
@@ -33,7 +34,7 @@ def handle(self):
                 thedata = json.loads(r.text)
                 bot.sendMessage(chat_id, thedata['simsimi_talk_set']['answers'][0]['sentence'])
 MessageLoop(bot, handle).run_as_thread()
-print ('Running...')
+print ('Running script')
 # Keep the program running.
 while 1:
     time.sleep(1)
