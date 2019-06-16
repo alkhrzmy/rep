@@ -1,5 +1,5 @@
 telepot
-humanfriedly
+humanfriendly
 time
 json
 requests
